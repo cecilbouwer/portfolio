@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="X-UA-Compatible" content="ms=edge">
+  <meta name="robots" content="noindex, nofollow">
+  <title>CJ Bouwer | Video Editing</title>
+  <link rel="icon" href="images/favicon.svg" sizes="any" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+
+  <!-- preloader -->
+
+  <!-- <div class="preload">
+    <lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_tzluucnc.json" background="transparent"
+      speed="1" style="width: 500px; height: 300px;" autoplay></lottie-player>
+    <p>Loading content...</p>
+  </div> -->
+
+  <!-- background video -->
+
+  <video autoplay muted loop id="bg_video">
+    <source src="video/video-editing.mp4" type="video/mp4"> Your browser does not support HTML5 video.
+  </video>
+
+  <!-- main navigation -->
+  
+  <nav>
+    <div class="content">
+      <a href="index.html"><img src="images/cjbouwer-logo.svg" alt=""></a>
+      <div class="links">
+        <a href="#about">about</a>
+        <div class="dropdown-content">
+          <button class="dropbtn">latest work
+            <i class="material-icons">arrow_drop_down</i>
+          </button>
+          <div class="dropdown-links">
+            <a href="web-development.html">web development</a>
+            <a href="web-design.html">web design</a>
+            <a href="video-editing.html">video editing</a>
+            <a href="photography.html">photography</a>
+          </div>
+        </div>
+        <a href="#sub">request resumè</a>
+        <a href="#contact">contact me</a>
+      </div>
+      <i class="material-icons menu" onclick="menu()">menu</i>
+    </div>
+    <div class="dropdown">
+      <a href="#about">about</a>
+      <a href="web-development.html">web development</a>
+      <a href="web-design.html">web design</a>
+      <a href="video-editing.html">video editing</a>
+      <a href="photography.html">photography</a>
+      <a href="#sub">request resumè</a>
+      <a href="#contact">contact me</a>
+    </div>
+  </nav>
+
+  <!-- hero section -->
+  
+  <div class="hero">
+    <p id="intro">Digital Portfolio of</p>
+    <p id="title">Cecil Juan Bouwer</p>
+    <div class="line"></div>
+    <div class="work">
+      <a href="web-development.html"><img src="images/web-development.svg" alt="Web Development"></a>
+      <a href="web-design.html"><img src="images/web-design.svg" alt="Web Design"></a>
+      <a href="video-editing.html"><img src="images/videography.svg" alt="Videography"></a>
+      <a href="photography.html"><img src="images/photography.svg" alt="Photography"></a>
+      <div class="readmore">
+        <a href="#about"><button class="btn">Read more</button></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- body container section -->
+
+  <div class="container">
+    <div class="grid">
+      <div class="title-devide devide-sub">Video Editing</div>
+      <div class="info">
+        <div class="left-info">
+          <h2>About</h2>
+          <p>
+            An experienced motion graphics artist and video editor, I have an eye for detail and I'm always pushing to
+            stay on top of design trends.
+          </p>
+
+          <p>
+            From animated explainer videos and design, to app showcase videos with sound design and editing.
+          </p>
+          <h2>History</h2>
+          <p>
+            With years of experience in the learning industry as a motion graphics artist, I've had the privilege to
+            work with big clients such as PMI, Colt, Rocketfuel, Tyson Properties, British Red Cross and Cosmopolitan.
+            I created dynamic motion graphics templates and scripts to make editing much easier and faster for teams.
+          </p>
+        </div>
+
+        <div class="right-info">
+          <h2>Professional Skills</h2>
+
+          <p>
+            Skilled in Adobe software such as Premiere Pro, After Effects, Illustrator and Audition. With shooting end
+            editing skills and a very technical overview of camera gear, lenses and programs.
+          </p><br>
+          <p>
+            I have experience with Canon, Nikon and Sony cameras as well as drone operating.
+          </p>
+        </div>
+      </div>
+
+      <!-- featured work popup gallery -->
+
+      <div class="latest-info">Latest projects</div>
+
+      <div class="featured-work">
+        <a href="#showreel" class="featured-work-box showreel">
+          <div class="card-info">
+            <h1>2020 Showreel</h1>
+            <p>
+              Video production and Animation showcase. From Animated explainer videos and design to app showcase
+              videos.
+            </p>
+          </div>
+        </a>
+
+        <a href="#acet" class="featured-work-box acet">
+          <div class="card-info">
+            <h1>ACET Showcase</h1>
+            <p>
+              App Showcase UX Design. Clean easy to navigate interface with dark and light mode including an app
+              showcase video.
+            </p>
+          </div>
+        </a>
+
+        <a href="#rocketfuel" class="featured-work-box rocketfuel">
+          <div class="card-info">
+            <h1>Rocketfuel</h1>
+            <p>
+              Site re-design, development and products video for the Rocketfuel brand.
+            </p>
+          </div>
+        </a>
+
+        <a href="#magdalena" class="featured-work-box magdalena">
+          <div class="card-info">
+            <h1>Magdalena</h1>
+            <p>
+              Snippets from the beautiful animated inspirational video by Magdalena.
+            </p>
+          </div>
+        </a>
+
+        <a href="#colt" class="featured-work-box colt">
+          <div class="card-info">
+            <h1>Colt</h1>
+            <p>
+              Animated infographic style video for Colt in-house training.
+            </p>
+          </div>
+        </a>
+
+        <a href="#fuse-school" class="featured-work-box fuse-school">
+          <div class="card-info">
+            <h1>Fuse School</h1>
+            <p>
+              Website development UX design for Fuse School including a launch video.
+            </p>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- popups -->
+
+      <div id="showreel" class="popup">
+        <a href="#!" class="close">&times;</a>
+        <h1>2020 Showreel</h1>
+        <h2>About</h2>
+        <p>
+          My 2020 Showreel montage of projects and clients I've had the privilege to work with. From fashion shows to
+          real estate shoots, to animated explainer videos, and fun animated infographic style videos, with a focus on
+          animation and scripting skills. I have concentrated on these skills over the past few years to create dynamic
+          scenes, text, and movements.
+        </p>
+        <br>
+
+        <iframe class="youtube-video" width="100%" height="500" src="https://www.youtube.com/embed/qWQQnAETf1c"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+
+      </div>
+      <a href="#!" class="close-popup"></a>
+
+      <div id="acet" class="popup">
+        <a href="#!" class="close">&times;</a>
+        <h1>ACET App Showcase</h1>
+        <h2>About</h2>
+        <p>App Showcase UX Design. Clean easy to navigate interface with dark and light mode including an app showcase
+          video.</p>
+
+        <h2>The Brief</h2>
+        <p>
+          App Showcase video was created to show all the features and how to navigate the app. As I created the XD files it was
+          easy to export them to After Effects to create the video. I decided to create 3D phone mockups to add the app showcase, I
+          then animated all the layers, added video and images.
+        </p>
+        <br>
+
+        <iframe class="youtube-video" width="100%" height="500" src="https://www.youtube.com/embed/yRGYvao8_4E"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+
+        <h2>Professional Skills</h2>
+        <p>
+          <b>Design:</b> Adobe software such as Illustrator, Photoshop, XD.
+          <b>Video:</b> Premiere Pro, After Effects, Illustrator and Audition.
+        </p>
+      </div>
+      <a href="#!" class="close-popup"></a>
+
+      <div id="rocketfuel" class="popup">
+        <a href="#!" class="close">&times;</a>
+        <h1>Rocketfuel</h1>
+        <h2>About</h2>
+        <p>
+          Rocketfuel is a well established branding design and development company with many well known designs.
+        </p>
+
+        <h2>The Brief</h2>
+        <p>
+          I was tasked with creating a new website for Rocketfuel, from design to development and a promotional video.
+          We decided to create an inspirational style video asking the question... What is your shape? As Rocketfuel will help
+          develop a brand shape, look and feel for a potential client. I recorded the voiceover and edited it in Audition.
+        </p>
+
+        <br>
+
+        <iframe class="youtube-video" width="100%" height="500" src="https://www.youtube.com/embed/57G-kh0Bmj4"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+
+        <br>
+
+        <h2>Professional Skills</h2>
+        <p>
+          Adobe software such as Premiere Pro, After Effects, Illustrator and Audition. With shooting end
+          editing skills and a very technical overview of camera gear, lenses and programs.
+        </p>
+      </div>
+      <a href="#!" class="close-popup"></a>
+
+      <div id="magdalena" class="popup">
+        <a href="#!" class="close">&times;</a>
+        <h1>Magdalena - Truly Listing</h1>
+        <h2>About</h2>
+        <p>
+          Snippets from the beautiful animated inspirational video by Magdalena.
+        </p>
+      
+        <h2>The Brief</h2>
+        <p>
+          Magdalena needed an animated inspirational video with a very specific style, which had initially been developed with
+          another designer. I was tasked with creating a video with the same abstract style to follow in the series of animated videos.
+          It consists of abstract shapes spaced out in 3D to create the image. As the camera moves it creates an image on screen
+          and then morphs into another shape.
+        </p>
+      
+        <br>
+      
+        <iframe class="youtube-video" width="100%" height="500" src="https://www.youtube.com/embed/pVrhHzRC-hw"
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      
+        <h2>Professional Skills</h2>
+        <p>
+          Adobe software such as Premiere Pro, After Effects, Illustrator and Audition.
+        </p>
+      </div>
+      <a href="#!" class="close-popup"></a>
+
+      <div id="colt" class="popup">
+        <a href="#!" class="close">&times;</a>
+        <h1>Colt - Questioning and Listening Skills</h1>
+        <h2>About</h2>
+        <p>
+          Colt is a technology service bassed in the United Kingdom providing vioce services.
+        </p>
+      
+        <h2>The Brief</h2>
+        <p>
+          This was part of the video series I created when I worked for <a href="www.fuseuniversal.com">Fuse Universal</a>,
+          as part of in-house training. An expert in the field was interviewed and then 2D animations were added to support
+          and augment the video to make it easier to understand. We would typically have 3 working days to create the
+          illustrations and animations. I usually went the extra mile to make sure the video looks and sounds great with 
+          background noise removal, and boosting the voiceover.
+        </p>
+      
+        <br>
+      
+        <iframe class="youtube-video" width="100%" height="500" src="https://www.youtube.com/embed/6VIQ6Xeg2kI"
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      
+        <h2>Professional Skills</h2>
+        <p>
+          Adobe software such as Premiere Pro, After Effects, Illustrator and Audition.
+        </p>
+      </div>
+      <a href="#!" class="close-popup"></a>
+
+      <div id="fuse-school" class="popup">
+        <a href="#!" class="close">&times;</a>
+        <h1>Fuse School - Ged Story</h1>
+        <h2>About</h2>
+        <p>
+          Fuse School is a free online learning platform for the South African school curriculum covering math, science, biology
+          and english.
+        </p>
+
+        <h2>The Brief</h2>
+        <p>
+          The Fuse School video was created for social media, beautiful illustrations, animation and voiceover made the video
+          great. I recorded the voiceover and edited it in Audition.
+        </p>
+        <br>
+
+        <iframe class="youtube-video" width="100%" height="500" src="https://www.youtube.com/embed/dI47E--6vWg"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+
+        <h2>Professional Skills</h2>
+        <p>
+          Adobe software such as Premiere Pro, After Effects, Illustrator and Audition.
+        </p>
+
+      </div>
+      <a href="#!" class="close-popup"></a>
+
+    </div>
+  </div>
+
+  <!-- footer area -->
+
+  <footer id="contact">
+    <div class="footer-header">Contact Me</div>
+    <form action="https://formspree.io/f/xwkwwrgg" method="POST" id="my-form">
+      <div class="form-group">
+        <input type="text" id="firstName" name="firstName" placeholder="Your name..">
+        <input type="text" id="lastName" name="lastName" placeholder="Your last name..">
+        <input type="text" id="email" name="email" placeholder="Your email address">
+        <textarea name="message" placeholder="Write something.." id="message" cols="30" rows="5"></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    </div>
+    <div class="contact">
+      <p>Leave me a message in the form and I'll get back to you as soon as possible. You can also get in touch with me
+        with the details below.</p>
+      <br>
+      <hr>
+      <br>
+      <h3>Contact Details:</h3><br>
+      <p>Cell: <a href="tel:+2772-124-0218">072 124 0218</a><br>
+        Email: <a href="mailto:cecil.bouwer@gmail.com">cecil.bouwer@gmail.com</a><br>
+        Burgundy Estate<br>
+        Cape Town<br>
+        7441
+      </p>
+      <div class="social">
+        <p>Follow me on social</p><br>
+        <a href="https://www.facebook.com/ceciljbouwer/" target="_blank">
+          <img src="images/facebook.svg" alt="Facebook"></a>
+        <a href="https://www.instagram.com/ceciljbouwer/" target="_blank">
+          <img src="images/instagram.svg" alt="Instagram"></a>
+        <a href="https://www.behance.net/ceciljbouwer" target="_blank">
+          <img src="images/behance.svg" alt="Behance"></a>
+        <a href="https://www.linkedin.com/in/cecil-juan-bouwer-4a52a889/" target="_blank">
+          <img src="images/linkedin.svg" alt="Linkedin"></a>
+      </div>
+    </div>
+    <div class="copy">&copy; Copywright 2020 Cecil Juan Bouwer</div>
+  </footer>
+  <script>
+    $('a.close-popup, a.close').click(function () {
+      $('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+    });
+  </script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="X-UA-Compatible" content="ms=edge">
+  <meta name="robots" content="noindex, nofollow">
+  <title>CJ Bouwer Digital Portfolio</title>
+  <link rel="icon" href="images/favicon.svg" sizes="any" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+
+  <!-- preloader -->
+
+  <div class="preload">
+    <lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_tzluucnc.json" background="transparent"
+      speed="1" style="width: 500px; height: 300px;" autoplay></lottie-player>
+    <p>Loading content...</p>
+  </div>
+
+  <!-- background video -->
+
+  <video autoplay muted loop id="bg_video">
+    <source src="video/home.mp4" type="video/mp4"> Your browser does not support HTML5 video.
+  </video>
+
+  <!-- main navigation -->
+
+  <nav>
+    <div class="content">
+      <a href="index.html"><img src="images/cjbouwer-logo.svg" alt=""></a>
+      <div class="links">
+        <a href="#about">about</a>
+        <div class="dropdown-content">
+          <button class="dropbtn">latest work
+            <i class="material-icons">arrow_drop_down</i>
+          </button>
+          <div class="dropdown-links">
+            <a href="web-development.html">web development</a>
+            <a href="web-design.html">web design</a>
+            <a href="video-editing.html">video editing</a>
+            <a href="photography.html">photography</a>
+          </div>
+        </div>
+        <a href="#sub">request resumè</a>
+        <a href="#contact">contact me</a>
+      </div>
+      <i class="material-icons menu" onclick="menu()">menu</i>
+    </div>
+    <div class="dropdown">
+      <a href="#about">about</a>
+      <a href="web-development.html">web development</a>
+      <a href="web-design.html">web design</a>
+      <a href="video-editing.html">video editing</a>
+      <a href="photography.html">photography</a>
+      <a href="#sub">request resumè</a>
+      <a href="#contact">contact me</a>
+    </div>
+  </nav>
+
+  <!-- hero section -->
+
+  <div class="hero">
+    <p id="intro">Digital Portfolio of</p>
+    <p id="title">Cecil Juan Bouwer</p>
+    <div class="line"></div>
+    <div class="work">
+      <a href="web-development.html"><img src="images/web-development.svg" alt="Web Development"></a>
+      <a href="web-design.html"><img src="images/web-design.svg" alt="Web Design"></a>
+      <a href="video-editing.html"><img src="images/videography.svg" alt="Videography"></a>
+      <a href="photography.html"><img src="images/photography.svg" alt="Photography"></a>
+      <div class="readmore">
+        <a href="#about">
+          <button class="btn">Read more</button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- body container section -->
+
+  <div class="container">
+    <div class="grid">
+
+      <!-- top intro -->
+
+      <div class="intro-content">
+        <div class="quote">
+          <p class="quote-top">Work Hard</p>
+          <p class="quote-bottom">Play Hard</p><br>
+          <p>
+            Hard work pays off - hard work beats talent any day, but if <br>you're talented and work hard, it's hard to
+            be beat.
+          </p><br>
+          <p>
+            Robert Griffin III
+          </p>
+        </div>
+        <div class="about" id="about">
+          <h3>
+            About me
+          </h3>
+          <p>I am a digital media specialist in Cape Town with expertise in dynamic web projects, video production, e-learning, and ad tech. I have honed my skills as a Motion Graphics Artist and UX Designer, staying updated with the latest design trends, including automated and animated explainer and app showcase videos.</p>
+          <p>I have extensive experience utilizing Google platforms like Google Studio and DV360 to create dynamic content. As a skilled Front-end Web Developer, I excel in HTML, CSS, and Javascript, including CSS Animation. I also specialize in UX optimization for seamless user experiences across platforms and devices.</p>
+          </p>
+        </div>
+      </div>
+
+      <!-- skills boxes -->
+
+      <div class="title-devide">Professional Skills</div>
+      <div class="work-cat">
+        <a href="web-development.html" class="dev-box">
+          <div class="trans">Web Development</div>
+        </a>
+        <a href="web-design.html" class="design-box">
+          <div class="trans">UX Design</div>
+        </a>
+        <a href="video-editing.html" class="video-box">
+          <div class="trans">Video Editing</div>
+        </a>
+        <a href="photography.html" class="photo-box">
+          <div class="trans">Photography</div>
+        </a>
+      </div>
+      <div class="latest-header">Featured Work</div>
+
+      <!-- featured work popup links -->
+
+      <div class="featured-work">
+
+        <a href="#pod-latest" class="featured-work-box pod-latest">
+          <div class="card-info">
+            <h1>Dynamic Ad-Tech</h1>
+            <p>Web Development, ad-tech development with dynamic content and tracking.</p>
+          </div>
+        </a>
+
+        <a href="#pod" class="featured-work-box pod">
+          <div class="card-info">
+            <h1>8pod</h1>
+            <p>A very clean and simple design that I designed in Adobe XD, then built with CSS Grid layout, a PHP contact form, and a CSS animation using the LottieFiles plugin.</p>
+          </div>
+        </a>
+
+        <a href="#dynamic-pod" class="featured-work-box dynamic-pod">
+          <div class="card-info">
+            <h1>Dynamic 8Pod&apos;s</h1>
+            <p>Dynamic ads with Dynamic Creative Optimization (DCO) on Google ad platforms and Enabler.js</p>
+          </div>
+        </a>
+
+        <a href="#pod-show" class="featured-work-box pod-show">
+          <div class="card-info">
+            <h1>8Pod Showcase</h1>
+            <p>8Pod Showcase UX Design with Adobe XD.</p>
+          </div>
+        </a>
+
+        <a href="#pod-report" class="featured-work-box pod-report">
+          <div class="card-info">
+            <h1>8Pod Dashboard</h1>
+            <p>App Showcase UX Design. Clean easy to navigate interface with dark and light mode including an app showcase video.</p>
+          </div>
+        </a>
+        
+        <a href="#showreel" class="featured-work-box showreel">
+          <div class="card-info">
+            <h1>2020 Showreel</h1>
+            <p>Video production and Animation showcase. From animated explainer videos and design, to app showcase videos</p>
+          </div>
+        </a>  
+
+        <!-- <a href="#rocketfuel" class="featured-work-box rocketfuel">
+          <div class="card-info">
+            <h1>Rocketfuel</h1>
+            <p>Site re-design, development and products video for the Rocketfuel brand.</p>
+          </div>
+        </a> -->
+
+        <!-- <a href="#fuse-school" class="featured-work-box fuse-school">
+          <div class="card-info">
+            <h1>Fuse School</h1>
+            <p>Website development UX design for Fuse School including a launch video.</p>
+          </div>
+        </a> -->
+
+        <!-- <a href="#magdalena" class="featured-work-box magdalena">
+          <div class="card-info">
+            <h1>Magdalena</h1>
+            <p>Snippets from the beautiful animated inspirational video by Magdalena.</p>
+          </div>
+        </a> -->
+
+      </div>
+
+      <!-- popups -->
+
+      <div id="pod-latest" class="popup">
+        <a href="#!" class="close">&times;</a>
+        <h1>Dynamic Ad-Tech Ads</h1>
+        <h2>About</h2>
+        <p>Dynamic Ad-tech template with colour themes and reporting. This is an example of the latest project I have been working on, a 300 x 250 Google ad size as the unexpanded ad.
+          <br><br>
+          When the user clicks on the ad, it expands to full screen to show the rest of the content.
+          <br>
+          In this example, there are three content themes and three to four slides in each theme.
+          <br>
+          Each slide can have a video or image background with a short description, this is presented with a carousel slider. When you click on any of the slides, it expands to show more content like images and video as well as other HTML elements like forms and buttons.
+          <br><br>
+          On the bottom of the screen it shows buttons to go to the next content theme, this can be used to support brand stories or themes.
+          <br><br>
+          Ensuring efficiency and rapid turnaround, I automated the theme customization process through a .json file. This enables seamless content replacement, facilitating the generation of multiple ad sizes with ease.
+          <br><br>
+          This also includes a tracking pixel and other trackers to build dynamic reports for AB Testing. You are then able to generate content based on user interactions.
+        </p>
+
+        <img src="images/8pod-new1.jpg" alt="">
+
+        <h2>Professional Skills</h2>
+        <p>Creating dynamic ads involves a combination of technical skills, creative abilities, and documentation proficiency.</p>
+        <ul>
+          <li><b>HTML/CSS/JavaScript</b> Implementing interactive features, dynamic content, and custom functionality within the ads.</li>
+          <li><b>Dynamic content feeds</b> connecting external data sources (e.g., Google Sheets) to the ad to pull real-time data and display personalized content.</li>
+          <li><b>Graphic design and animation</b> to create visually appealing and engaging ad content.</li>
+          <li><b>Data Manipulation for processing</b>, formatting, and presenting data in the ad dynamically.</li>
+          <li><b>JavaScript libraries and APIs</b>, implementing interactive features and connecting to external data sources.</li>
+          <li><b>Testing and debugging</b> dynamic ads to ensure it functions correctly and looks great on different devices and browsers.</li>
+          <li><b>Documentation and communication</b>, collaborating with stakeholders, such as designers, developers, and clients.</li>
+        </ul>
+
+      </div>
+      <a href="#!" class="close-popup"></a>
+
+
+      <div id="pod" class="popup">
+        <a href="#!" class="close">&times;</a>
+        <h1>8pod Website</h1>
+        <h2>About</h2>
+        <p>A very clean and simple design that I designed in Adobe XD, then built with CSS Grid layout, a PHP contact form, and a CSS animation using the LottieFiles plugin can be an interesting project.</p>
+        <h3>Design the Animation and Illustration:</h3>
+        <ul>
+          <li>Using Adobe Illustrator to create the card illustrations, icons, and other graphics needed for the site.</li>
+          <li>Using Adobe After Effects to create the animation and export it in Lottie format. Ensure that the animation complements the overall design and adds a visually appealing element to the site.</li>
+          <li>Export to Lottie: The plugin enables users to export their animations in the Lottie format, which produces small-sized JSON files that can be easily used in web and app development.</li>
+        </ul>
+
+        <img src="images/8pod-bg1.jpg" alt="">
+
+        <h3>Web Development:</h3>
+        <ul>
+          <li>Creating the HTML file and include the necessary CSS and JavaScript files. Additionally, add the LottieFiles plugin script.</li>
+          <li>Setting up the PHP file to handle the form submission. Create a form with fields for name, email, and message, and use PHP to process the form data and send it via email or store it in a database.</li>
+        </ul>
+
+        <img src="images/8pod-bg2.jpg" alt="">
+
+        <h2>Professional Skills</h2>
+        <p>
+          Adobe XD, After Effects and Illustrator. HTML, CSS, JavaScript, PHP and LottieFiles.
+        </p>
+      </div>
+      <a href="#!" class="close-popup"></a>
+
+      <div id="dynamic-pod" class="popup">
+        <a href="#!" class="close">&times;</a>
+        <h1>Dynamic 8Pod&apos;s</h1>
+        <h2>About</h2>
+        <p>Dynamic ads with Dynamic Creative Optimization (DCO) on Google ad platforms are personalized and customized advertisements that are tailored in real-time to individual users based on their behaviour, preferences, and demographics. DCO allows advertisers to create a single ad template with multiple creative elements, such as images, headlines, and call-to-action buttons, which can be dynamically assembled and personalized for each user at the time of ad impression.</p>
+       
+        <img src="images/dynamic-8pod1.jpg" alt="">
+        
+        <h2>Professional Skills</h2>
+
+        <p>Creating dynamic ads with Google Studio involves a combination of technical skills, creative abilities, and documentation proficiency.</p>
+        <ul>
+          <li><b>Google Web Designer</b>, for creating HTML5-based dynamic ads.</li>
+          <li><b>HTML/CSS/JavaScript</b> To create dynamic elements in Google Studio. Implementing interactive features, dynamic content, and custom functionality within the ads.</li>
+          <li><b>Dynamic content feeds</b> connecting external data sources (e.g., Google Sheets) to the ad to pull real-time data and display personalized content.</li>
+          <li><b>Graphic design and animation</b> to create visually appealing and engaging ad content.</li>
+          <li><b>Data Manipulation for processing</b>, formatting, and presenting data in the ad dynamically.</li>
+          <li><b>Google Studio's Component Library.</b></li>
+          <li><b>Google Ads Platform Integration.</b></li>
+          <li><b>JavaScript libraries and APIs</b>, implementing interactive features and connecting to external data sources.</li>
+          <li><b>Testing and debugging</b> dynamic ads to ensure it functions correctly and looks great on different devices and browsers.</li>
+          <li><b>Documentation and communication</b>, collaborating with stakeholders, such as designers, developers, and clients.</li>
+        </ul>
+      </div>
+      <a href="#!" class="close-popup"></a>
+
+      <div id="pod-report" class="popup">
+        <a href="#!" class="close">&times;</a>
+        <h1>Dashboard Prototype</h1>
+        <h2>About</h2>
+        <p>8Pod Dashboard UX Design with Adobe XD. I was tasked with creating a report dashboard prototype with pie charts and graphs to display reporting data. Clicking on the filters and graphs will display cards with the slide data and content overview. You will be able to manage the slides bassed on the data for dynamic content optimization.</p>
+
+        <img src="images/8pod-report2.png" alt="">
+        <img src="images/8pod-report3.png" alt="">
+
+        <h2>Professional Skills</h2>
+        <p>Adobe XD, Illustrator</p>
+
+      </div>
+      <a href="#!" class="close-popup"></a>
+
+      <div id="pod-show" class="popup">
+        <a href="#!" class="close">&times;</a>
+        <h1>8pod Showcase</h1>
+        <h2>About</h2>
+        <p>8Pod Showcase UX Design with Adobe XD. I was tasked with creating a new look for the dynamic 8pod template. It had to be responsive, clean and modern, easy to navigate and interact with.
+          <br><br>
+          The design fearures an animated frame, 300 x 250 in this instance(Google Ad size) that expands to full screen when the user clicks. The ad consists of three content themes with three to four slides each and a list view for easier access to content.
+          <br><br>
+          When you click on any of the slides it will display the supporting content images and videos.</p>
+
+        <img src="images/8pod-showcase1.jpg" style="width: 65%;" alt="">
+        <video src="video/new_pod_design.mp4" autoplay loop controls loading="lazy" style="width: 30%;"></video>
+
+        <h2>Professional Skills</h2>
+        <p>Adobe XD, Illustrator</p>
+      </div>
+      <a href="#!" class="close-popup"></a>
+
+
+      <div id="showreel" class="popup">
+        <a href="#!" class="close">&times;</a>
+        <h1>2020 Showreel</h1>
+        <h2>About</h2>
+        <p>
+          My 2020 Showreel montage of projects and clients I've had the privilege to work with. From fashion shows to
+          real estate shoots, to animated explainer videos, and fun animated infographic style videos, with a focus on
+          animation and scripting skills. I have concentrated on these skills over the past few years to create dynamic
+          scenes, text, and movements.
+        </p>
+        <br>
+
+        <iframe class="youtube-video" width="100%" height="500" src="https://www.youtube.com/embed/qWQQnAETf1c"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+
+      </div>
+      <a href="#!" class="close-popup"></a>
+
+      <div id="rocketfuel" class="popup">
+        <a href="#!" class="close">&times;</a>
+        <h1>Rocketfuel</h1>
+        <h2>About</h2>
+        <p>
+          Rocketfuel is a well established branding design and development company with many well known designs.
+        </p>
+
+        <h2>The Brief</h2>
+        <p>
+          I was tasked with creating a new website for Rocketfuel, from design to development and a promotional video.
+          Together with the owner we came up with a modern, easy to navigate design that showcases the brand and what
+          they do. Bold headers and exciting imagery came together to make a great website that I'm really proud of.
+        </p>
+
+        <br>
+
+        <img src="images/rocketfuel-bg-1.png" alt="">
+
+        <h2>The Video</h2>
+        <p>
+          We decided to create an inspirational style video asking the question... What is your shape? This illustrates
+          that Rocketfuel will help develop a brand shape, look and feel for a potential client. I recorded the voiceover 
+          and edited it in Audition.
+        </p>
+        <br>
+
+        <iframe class="youtube-video" width="100%" height="500" src="https://www.youtube.com/embed/57G-kh0Bmj4"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe> 
+
+        <h2>Professional Skills</h2>
+        <p>
+          <b>Web development:</b> HTML, CSS, Javascript, PHP. <b>Design:</b> Adobe software such as Illustrator, Photoshop, XD. <b>Video:</b> Premiere Pro, After Effects, Illustrator and Audition.
+        </p>
+      </div>
+      <a href="#!" class="close-popup"></a>
+
+      <div id="fuse-school" class="popup">
+        <a href="#!" class="close">&times;</a>
+        <h1>Fuse School</h1>
+        <h2>About</h2>
+        <p>
+          Fuse School is a free online learning platform for the South African school curriculum covering math, science,
+          biology and English.
+        </p>
+
+        <h2>The Brief</h2>
+        <p>
+          I was tasked with creating a login front page and main subject category widget for students to be able to log
+          in and start learning. The platform was built by Fuse to allow clients to easily customize a skin to fit any business
+          by creating widgets to get functionality using API calls. They needed a modern responsive login page with a style
+          that matched the social media video.
+        </p>
+        <br>
+
+        <img src="images/fuse-school-bg-1.png" alt="">
+
+        <h2>Professional Skills</h2>
+        <p>
+          <b>Web development:</b> HTML, CSS, Javascript, PHP. <b>Design:</b> Adobe software such as Illustrator,
+          Photoshop, XD. <b>Video:</b> Premiere Pro, After Effects, Illustrator and Audition.
+        </p>
+        <img src="images/fuse-school-bg-3.png" alt="">
+        </p>
+        <h2>The Video</h2>
+        <p>
+          The Fuse School video was created for social media. Beautiful illustrations, animation and voiceover made the
+          video great. I recorded the voiceover and edited it in Audition.
+        </p>
+
+        <iframe class="youtube-video" width="100%" height="500" src="https://www.youtube.com/embed/dI47E--6vWg"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+
+      </div>
+      <a href="#!" class="close-popup"></a>
+
+      <div id="magdalena" class="popup">
+        <a href="#!" class="close">&times;</a>
+        <h1>Magdalena - Truly Listing</h1>
+        <h2>About</h2>
+        <p>
+          Snippets from the beautiful animated inspirational video by Magdalena.
+        </p>
+
+        <h2>The Brief</h2>
+        <p>
+          Magdalena needed an animated inspirational video with a very specific style, which had initially been
+          developed with another designer. I was tasked with creating a video with the same abstract style to 
+          follow in the series of animated videos. It consists of abstract shapes spaced out in 3D to create 
+          the image. As the camera moves it creates an image on screen and then morphs into another shape.
+        </p>
+
+        <br>
+
+        <iframe class="youtube-video" width="100%" height="500" src="https://www.youtube.com/embed/pVrhHzRC-hw"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+
+        <h2>Professional Skills</h2>
+        <p>Adobe software such as Premiere Pro, After Effects, Illustrator and Audition.</p>
+      </div>
+      <a href="#!" class="close-popup"></a>
+
+    </div>
+  </div>
+
+  <!-- transparent work bar -->
+
+  <div class="trans-box">
+    <div class="sub-container" id="sub">
+      <div class="sub-header">LET'S WORK TOGETHER</div>
+      <div class="sub-info">
+        <p>I'm always looking to make great work with great clients. If you want to acquire my services, start by leaving me a message describing your requirements, timeline, budget and I’ll come back to you as soon as possible.</p>
+      </div>
+      <div class="sub-btn">
+        <button onclick="document.location='#contact'" class="btn">read more</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer area -->
+
+  <footer id="contact">
+    <div class="footer-header">Contact Me</div>
+    <form action="https://formspree.io/f/xwkwwrgg" method="POST" id="my-form">
+      <div class="form-group">
+        <input type="text" id="firstName" name="firstName" placeholder="Your name..">
+        <input type="text" id="lastName" name="lastName" placeholder="Your last name..">
+        <input type="text" id="email" name="email" placeholder="Your email address">
+        <textarea name="message" placeholder="Write something.." id="message" cols="30" rows="5"></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    </div>
+    <div class="contact">
+      <p>Leave me a message in the form and I'll get back to you as soon as possible. You can also get in touch with me with the details below.</p>
+      <br>
+      <hr>
+      <br>
+      <h3>Contact Details:</h3><br>
+      <p>Cell: <a href="tel:+2772-124-0218">072 124 0218</a><br>
+        Email: <a href="mailto:cecil.bouwer@gmail.com">cecil.bouwer@gmail.com</a><br>
+        Burgundy Estate<br>
+        Cape Town<br>
+        7441
+      </p>
+      <div class="social">
+        <p>Follow me on social</p><br>
+        <a href="https://www.facebook.com/ceciljbouwer/" target="_blank">
+          <img src="images/facebook.svg" alt="Facebook"></a>
+        <a href="https://www.instagram.com/ceciljbouwer/" target="_blank">
+          <img src="images/instagram.svg" alt="Instagram"></a>
+        <a href="https://www.behance.net/ceciljbouwer" target="_blank">
+          <img src="images/behance.svg" alt="Behance"></a>
+        <a href="https://www.linkedin.com/in/cecil-juan-bouwer-4a52a889/" target="_blank">
+          <img src="images/linkedin.svg" alt="Linkedin"></a>
+      </div>
+    </div>
+    <div id="status"></div>
+    <div class="copy">&copy; Copywright 2020 Cecil Juan Bouwer</div>
+  </footer>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+
+</html>

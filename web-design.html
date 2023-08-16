@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="X-UA-Compatible" content="ms=edge">
+  <meta name="robots" content="noindex, nofollow">
+  <title>CJ Bouwer | Web Design</title>
+  <link rel="icon" href="images/favicon.svg" sizes="any" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+
+  <!-- preloader -->
+
+  <!-- <div class="preload">
+    <lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_tzluucnc.json" background="transparent"
+      speed="1" style="width: 500px; height: 300px;" autoplay></lottie-player>
+    <p>Loading content...</p>
+  </div> -->
+
+  <!-- background video -->
+
+  <video autoplay muted loop id="bg_video">
+    <source src="video/web-design.mp4" type="video/mp4"> Your browser does not support HTML5 video.
+  </video>
+
+  <!-- main navigation -->
+  
+  <nav>
+    <div class="content">
+      <a href="index.html"><img src="images/cjbouwer-logo.svg" alt=""></a>
+      <div class="links">
+        <a href="#about">about</a>
+        <div class="dropdown-content">
+          <button class="dropbtn">latest work
+            <i class="material-icons">arrow_drop_down</i>
+          </button>
+          <div class="dropdown-links">
+            <a href="web-development.html">web development</a>
+            <a href="web-design.html">web design</a>
+            <a href="video-editing.html">video editing</a>
+            <a href="photography.html">photography</a>
+          </div>
+        </div>
+        <a href="#sub">request resumè</a>
+        <a href="#contact">contact me</a>
+      </div>
+      <i class="material-icons menu" onclick="menu()">menu</i>
+    </div>
+    <div class="dropdown">
+      <a href="#about">about</a>
+      <a href="web-development.html">web development</a>
+      <a href="web-design.html">web design</a>
+      <a href="video-editing.html">video editing</a>
+      <a href="photography.html">photography</a>
+      <a href="#sub">request resumè</a>
+      <a href="#contact">contact me</a>
+    </div>
+  </nav>
+
+  <!-- hero section -->
+  
+  <div class="hero">
+    <p id="intro">Digital Portfolio of</p>
+    <p id="title">Cecil Juan Bouwer</p>
+    <div class="line"></div>
+    <div class="work">
+      <a href="web-development.html"><img src="images/web-development.svg" alt="Web Development"></a>
+      <a href="web-design.html"><img src="images/web-design.svg" alt="Web Design"></a>
+      <a href="video-editing.html"><img src="images/videography.svg" alt="Videography"></a>
+      <a href="photography.html"><img src="images/photography.svg" alt="Photography"></a>
+      <div class="readmore">
+        <a href="#about"><button class="btn">Read more</button></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- body container section -->
+  
+  <div class="container">
+    <div class="grid">
+      <div class="title-devide devide-sub">Web Design</div>
+      <div class="info">
+        <div class="left-info">
+          <h2>About</h2>
+          <p>As a seasoned front-end web developer and UX designer, my passion lies in crafting exceptional digital experiences. I have spent the past few years working in the Ad-Tech industry, building dynamic ads and custom solutions to enhance advertising effectiveness.</p>
+          <h2>Professional Journey</h2>
+          <p>With a strong foundation in HTML, CSS, JavaScript, and data integration, I am dedicated to pushing the boundaries of digital design and user experience. Through my work, I aspire to leave a lasting impact on the audience and drive success for the brands I collaborate with.</p>
+        </div>
+
+        <div class="right-info">
+          <h2>Professional Skills</h2>
+
+          <p>
+            Adobe Creative Suite - After Effects, Premiere Pro, Illustrator, Photoshop, XD, Audition. Figma and other prototyping tools.
+          </p>
+          <h2>Awards</h2>
+          <p>
+            Adobe Site of the Day - Adobe<br>
+            Best CSS Web Design - CSS Light
+          </p>
+        </div>
+      </div>
+
+      <!-- featured work popup gallery -->
+
+      <div class="latest-info">Latest projects</div>
+
+      <div class="featured-work">
+        <a href="#pod-show" class="featured-work-box pod-show">
+          <div class="card-info">
+            <h1>8Pod Showcase</h1>
+            <p>App Showcase UX Design. Clean easy to navigate interface with dark and light mode including an app
+              showcase video.</p>
+          </div>
+        </a>
+
+        <a href="#pod-report" class="featured-work-box pod-report">
+          <div class="card-info">
+            <h1>8pod Report</h1>
+            <p>App Showcase UX Design. Clean easy to navigate interface with dark and light mode including an app
+              showcase video.</p>
+          </div>
+        </a>
+
+        <a href="#pod-evo" class="featured-work-box pod-evo">
+          <div class="card-info">
+            <h1>8pod Evolution</h1>
+            <p>App Showcase UX Design. Clean easy to navigate interface with dark and light mode including an app
+              showcase video.</p>
+          </div>
+        </a>
+        
+        <a href="#acet" class="featured-work-box acet">
+          <div class="card-info">
+            <h1>ACET Showcase</h1>
+            <p>
+              App Showcase UX Design. Clean easy to navigate interface with dark and light mode including an app
+              showcase video.
+            </p>
+          </div>
+        </a>
+
+        <a href="#acet-portal" class="featured-work-box acet-portal">
+          <div class="card-info">
+            <h1>Acet Portal</h1>
+            <p>
+              App Showcase UX Design. Clean easy to navigate interface with dark and light mode including an app
+              showcase video.
+            </p>
+          </div>
+        </a>
+
+        <!-- <a href="#dna" class="featured-work-box dna">
+          <div class="card-info">
+            <h1>DNA Superheroes</h1>
+            <p>
+              App Showcase UX Design. Clean easy to navigate interface with dark and light mode including an app
+              showcase video.
+            </p>
+          </div>
+        </a> -->
+
+        <!-- <a href="#ohmyart" class="featured-work-box ohmyart">
+          <div class="card-info">
+            <h1>Oh My Art</h1>
+            <p>
+              Site design and development for the Oh My Art brand.
+            </p>
+          </div>
+        </a> -->
+
+        <!-- <a href="#safety" class="featured-work-box safety">
+          <div class="card-info">
+            <h1>Feeling Safe</h1>
+            <p>
+              Interactive digital magazine for Hospitality Marketplace.
+            </p>
+          </div>
+        </a> -->
+
+        <a href="#wifi" class="featured-work-box wifi">
+          <div class="card-info">
+            <h1>Get Connected</h1>
+            <p>
+              Interactive digital magazine for Hospitality Marketplace.
+            </p>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- popups -->
+
+      <div id="pod-evo" class="popup">
+        <a href="#!" class="close">&times;</a>
+        <h1>8pod Evolution Prototype</h1>
+        <h2>About</h2>
+        <p>8Pod Showcase UX Design with Adobe XD. I was tasked with creating a new look for the dynamic 8pod template. It had to be responsive, clean and modern, easy to navigate and interact with.
+          <br><br>
+          The design fearures an animated frame, 300 x 250 in this instance(Google Ad size) that expands to full screen when the user clicks. The ad consists of three content themes with three to four slides each and a list view for easier access to content.
+          <br><br>
+          When you click on any of the slides it will display the supporting content images and videos.
+        </p>
+
+        <img src="images/8pod-evo1.jpg" style="width: 65%;" alt="">
+        <video src="video/8pod_evolution.mp4" autoplay loop controls loading="lazy" style="width: 30%;"></video>
+
+        <h2>Professional Skills</h2>
+        <p>Adobe XD, Illustrator</p>
+      </div>
+      <a href="#!" class="close-popup"></a>
+
+
+      <div id="pod-show" class="popup">
+        <a href="#!" class="close">&times;</a>
+        <h1>8pod Showcase</h1>
+        <h2>About</h2>
+        <p>8Pod Showcase UX Design with Adobe XD. I was tasked with creating a new look for the dynamic 8pod template. It had to be responsive, clean and modern, easy to navigate and interact with.
+          <br><br>
+          The design fearures an animated frame, 300 x 250 in this instance(Google Ad size) that expands to full screen when the user clicks. The ad consists of three content themes with three to four slides each and a list view for easier access to content.
+          <br><br>
+          When you click on any of the slides it will display the supporting content images and videos.
+        </p>
+
+        <img src="images/8pod-showcase1.jpg" style="width: 65%;" alt="">
+        <video src="video/new_pod_design.mp4" autoplay loop controls loading="lazy" controls style="width: 30%;"></video>
+
+        <h2>Professional Skills</h2>
+        <p>Adobe XD, Illustrator</p>
+      </div>
+      <a href="#!" class="close-popup"></a>
+
+
+      <div id="pod-report" class="popup">
+        <a href="#!" class="close">&times;</a>
+        <h1>Dashboard Prototype</h1>
+        <h2>About</h2>
+        <p>8Pod Dashboard UX Design with Adobe XD. I was tasked with creating a report dashboard prototype with pie charts and graphs to display reporting data. Clicking on the filters and graphs will display cards with the slide data and content overview. You will be able to manage the slides bassed on the data for dynamic content optimization.</p>
+
+        <img src="images/8pod-report2.png" alt="">
+        <img src="images/8pod-report3.png" alt="">
+
+        <h2>Professional Skills</h2>
+        <p>Adobe XD, Illustrator</p>
+
+      </div>
+      <a href="#!" class="close-popup"></a>
+
+      
+      <div id="acet" class="popup">
+        <a href="#!" class="close">&times;</a>
+        <h1>ACET App Showcase</h1>
+        <h2>About</h2>
+        <p>
+          App Showcase UX Design. Clean easy to navigate interface with dark and light mode including an app
+          showcase video
+        </p>
+        
+        <h2>The Brief</h2>
+        <p>
+          ACET tasked me to design a modern, easy to navigate app for social learning, that would feature a timeline
+          with videos, images and posts where the user can read reports and post reflections. It also has a social
+          networking side with groups of users, communities and classes. I designed every feature in great detail to create a
+          social media app showcase video.
+        </p>
+        <br>
+
+        <img src="images/acet-bg.png" alt="">
+
+        <h2>Professional Skills</h2>
+        <p>
+          <b>Design:</b> Adobe software such as Illustrator, Photoshop, XD.
+        </p>
+      </div>
+      <a href="#!" class="close-popup"></a>
+
+      <div id="acet-portal" class="popup">
+        <a href="#!" class="close">&times;</a>
+        <h1>Acet Portal</h1>
+        <h2>About</h2>
+        <p>
+          Clean, easy to navigate design for a the ACET Portal.
+        </p>
+        
+        <h2>The Brief</h2>
+        <p>
+          ACET tasked me to design a modern easy to navigate user portal where you can create content for the ACET App.
+          You can create and edit posts, add images and video and structure the timeline. It also features analytics for users, posts 
+          and reports. 
+        </p>
+        <br>
+        <img src="images/acet_portal7.png" alt="">
+        <h2>Professional Skills</h2>
+        <p>
+          <b>Design:</b> Adobe software such as Illustrator, Photoshop, XD.
+        </p>
+
+      </div>
+      <a href="#!" class="close-popup"></a>
+
+      <div id="dna" class="popup">
+        <a href="#!" class="close">&times;</a>
+        <h1>DNA Superheroes</h1>
+        <h2>About</h2>
+        <p>
+          Clean, easy to navigate design for a social learning app called DNA Superheroes. 
+        </p>
+        
+        <h2>The Brief</h2>
+        <p>
+          DNA Superheroes tasked me to design a modern easy to navigate app for social learning, that will feature a timeline
+          with videos, images and posts where the user can read reports and post reflections. It will also have a social
+          networking side with groups of users, communities and classes as well as a gamification section that display user
+          statistics.
+        </p>
+        <br>
+        <img src="images/dna-superheroes.png" alt="">
+        <h2>Professional Skills</h2>
+        <p>
+          <b>Design:</b> Adobe software such as Illustrator, Photoshop, XD.
+        </p>
+
+      </div>
+      <a href="#!" class="close-popup"></a>
+
+      <div id="ohmyart" class="popup">
+        <a href="#!" class="close">&times;</a>
+        <h1>Oh My Art</h1>
+        <h2>About</h2>
+        <p>
+          Oh My Art is an art studio which offers classes for children and adults on an ongoing basis. It also has a
+          small retail section, with products available in-store and online.
+        </p>
+
+        <h2>The Brief</h2>
+        <p>
+          Oh My Art was a new business when I started working with them. Therefore, I was required to create an
+          apporpriate logo to be used on business cards, bags, decor, and other promotioinal items. Together with the
+          owner, we decided to develop a recognisable identity for the website which would reflect the quirky and fun
+          nature of the studio and the products offered. The website also needed to be easy to navigate in order for
+          potential customers to find and book art classes.
+        </p>
+        <br>
+        <img src="images/ohmyart-bg-3.png" alt="">
+        <h2>Professional Skills</h2>
+        <p>
+          Adobe software such as Premiere Pro, After Effects, Illustrator and Audition. With shooting end
+          editing skills and a very technical overview of camera gear, lenses and programs.
+        </p>
+
+      </div>
+      <a href="#!" class="close-popup"></a>
+
+      <div id="safety" class="popup">
+        <a href="#!" class="close">&times;</a>
+        <h1>Coffee Cult</h1>
+        <h2>About</h2>
+        <p>
+          Monthly interctive responsive digital magazine with ads, competitions, interview videos and recipies.
+        </p>
+      
+        <h2>The Brief</h2>
+        <p>
+          I was tasked to create an interactive digital magazine for Shout Factory Media to replace or support their
+          print magazines like Hospitality Marketplace, Chef!, Purely Local and Chef Mag.
+          The magazine had to be fully responsive and interactive and had to be able to play videos, have the ability to
+          place ads and a short turnaround time. I wanted to create a unique experience unlike the usual PDF viewer
+          digital magazine, with CSS Animations, parallax scrolling, light and dark mode and all the latest CSS and Javascript
+          features.
+        </p>
+        <br>
+        <img src="images/safety-bg-1.png" alt="">
+        <h2>Professional Skills</h2>
+        <p>
+          The digital magazines were built in HTML, CSS and Javascript, design and image editing was done in Photoshop
+          and Illustrator. Video editing and animation was done with After Effects and Premiere Pro.
+        </p>
+      </div>
+      <a href="#!" class="close-popup"></a>
+      
+      <div id="wifi" class="popup">
+        <a href="#!" class="close">&times;</a>
+        <h1>Get Connected</h1>
+        <h2>About</h2>
+        <p>
+          Monthly interctive responsive digital magazine with ads, competitions, interview videos and recipies.
+        </p>
+      
+        <h2>The Brief</h2>
+        <p>
+          I was tasked to create an interactive digital magazine for Shout Factory Media to replace or support their
+          print magazines like Hospitality Marketplace, Chef!, Purely Local and Chef Mag.
+          The magazine had to be fully responsive and interactive and had to be able to play videos, have the ability to
+          place ads and a short turnaround time. I wanted to create a unique experience unlike the usual PDF viewer
+          digital magazine, with CSS Animations, parallax scrolling, light and dark mode and all the latest CSS and Javascript
+          features.
+        </p>
+        <br>
+        <img src="images/wifi-bg-1.png" alt="">
+        <h2>Professional Skills</h2>
+        <p>
+          The digital magazines were built in HTML, CSS and Javascript, design and image editing was done in Photoshop
+          and Illustrator. Video editing and animation was done with After Effects and Premiere Pro.
+        </p>
+      </div>
+      <a href="#!" class="close-popup"></a>
+
+
+    </div>
+  </div>
+
+  <!-- footer area -->
+  
+  <footer id="contact">
+    <div class="footer-header">Contact Me</div>
+    <form action="https://formspree.io/f/xwkwwrgg" method="POST" id="my-form">
+      <div class="form-group">
+        <input type="text" id="firstName" name="firstName" placeholder="Your name..">
+        <input type="text" id="lastName" name="lastName" placeholder="Your last name..">
+        <input type="text" id="email" name="email" placeholder="Your email address">
+        <textarea name="message" placeholder="Write something.." id="message" cols="30" rows="5"></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    </div>
+    <div class="contact">
+      <p>Leave me a message in the form and I'll get back to you as soon as possible. You can also get in touch with me
+        with the details below.</p>
+      <br>
+      <hr>
+      <br>
+      <h3>Contact Details:</h3><br>
+      <p>Cell: <a href="tel:+2772-124-0218">072 124 0218</a><br>
+        Email: <a href="mailto:cecil.bouwer@gmail.com">cecil.bouwer@gmail.com</a><br>
+        Burgundy Estate<br>
+        Cape Town<br>
+        7441
+      </p>
+      <div class="social">
+        <p>Follow me on social</p><br>
+        <a href="https://www.facebook.com/ceciljbouwer/" target="_blank">
+          <img src="images/facebook.svg" alt="Facebook"></a>
+        <a href="https://www.instagram.com/ceciljbouwer/" target="_blank">
+          <img src="images/instagram.svg" alt="Instagram"></a>
+        <a href="https://www.behance.net/ceciljbouwer" target="_blank">
+          <img src="images/behance.svg" alt="Behance"></a>
+        <a href="https://www.linkedin.com/in/cecil-juan-bouwer-4a52a889/" target="_blank">
+          <img src="images/linkedin.svg" alt="Linkedin"></a>
+      </div>
+    </div>
+    <div class="copy">&copy; Copywright 2020 Cecil Juan Bouwer</div>
+  </footer>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
